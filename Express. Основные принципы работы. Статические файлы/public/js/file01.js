@@ -1,0 +1,1 @@
+function MySum(x,y) {return x+y;}

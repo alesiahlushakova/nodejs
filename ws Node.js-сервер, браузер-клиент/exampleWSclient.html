@@ -1,0 +1,11 @@
+<p>
+        Result :<output name="" type="text" id="result" value"readonly"></output>
+      </p>
+      <input type="text" onchange="ws.send(this.value);">
+      </body>
+      <script>
+          var ws = new WebSocket('ws://localhost:4000');
+          ws.onmessage=function(event){
+              document.getElementById("result").value=event.data;
+          }
+      </script>
